@@ -4,9 +4,6 @@
   "private": true,
   "homepage": "/",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
     "axios": ">=0.25.0",
     "classnames": "^2.2.6",
     "email-validator": "^2.0.4",
@@ -22,6 +19,11 @@
     "react-select": "^5.4.0",
     "react-transition-group": "^4.3.0",
     "sass": "^1.50"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
