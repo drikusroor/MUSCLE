@@ -21,7 +21,7 @@ services:
           test: ["CMD-SHELL", "pg_isready"]
           interval: 5s
           timeout: 5s
-          retries: 5  
+          retries: 5
     ip2country:
         image: extrawurst/ip2country:latest
         ports:
@@ -65,17 +65,17 @@ services:
             source: ./frontend/public
             target: /client/public
         environment:
-          - REACT_APP_API_ROOT=${REACT_APP_API_ROOT}
-          - REACT_APP_EXPERIMENT_SLUG=${REACT_APP_EXPERIMENT_SLUG}
-          - REACT_APP_AML_HOME=${REACT_APP_AML_HOME}
-          - REACT_APP_LOGO_URL=${REACT_APP_LOGO_URL}
-          - REACT_APP_HTML_FAVICON=${REACT_APP_HTML_FAVICON}
-          - REACT_APP_HTML_PAGE_TITLE=${REACT_APP_HTML_PAGE_TITLE}
-          - REACT_APP_HTML_OG_DESCRIPTION=${REACT_APP_HTML_OG_DESCRIPTION}
-          - REACT_APP_HTML_OG_IMAGE=${REACT_APP_HTML_OG_IMAGE}
-          - REACT_APP_HTML_OG_TITLE=${REACT_APP_HTML_OG_TITLE}
-          - REACT_APP_HTML_OG_URL=${REACT_APP_HTML_OG_URL}
-          - REACT_APP_HTML_BODY_CLASS=${REACT_APP_HTML_BODY_CLASS}
+          - VITE_APP_API_ROOT=${VITE_APP_API_ROOT}
+          - VITE_APP_EXPERIMENT_SLUG=${VITE_APP_EXPERIMENT_SLUG}
+          - VITE_APP_AML_HOME=${VITE_APP_AML_HOME}
+          - VITE_APP_LOGO_URL=${VITE_APP_LOGO_URL}
+          - VITE_APP_HTML_FAVICON=${VITE_APP_HTML_FAVICON}
+          - VITE_APP_HTML_PAGE_TITLE=${VITE_APP_HTML_PAGE_TITLE}
+          - VITE_APP_HTML_OG_DESCRIPTION=${VITE_APP_HTML_OG_DESCRIPTION}
+          - VITE_APP_HTML_OG_IMAGE=${VITE_APP_HTML_OG_IMAGE}
+          - VITE_APP_HTML_OG_TITLE=${VITE_APP_HTML_OG_TITLE}
+          - VITE_APP_HTML_OG_URL=${VITE_APP_HTML_OG_URL}
+          - VITE_APP_HTML_BODY_CLASS=${VITE_APP_HTML_BODY_CLASS}
         ports:
           - 3000:3000
         command: sh -c "yarn scss && yarn start"

@@ -1,2 +1,3 @@
-sudo docker-compose run client yarn test --watchAll=false
+#!/bin/sh
 
+docker-compose run client yarn test --watchAll=false
