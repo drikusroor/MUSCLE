@@ -46,7 +46,9 @@ body:
   validations:
     required: false
 - type: markdown
-  id: screenshotmarkdown
+  attributes:
+    value: |
+      Thanks for taking the time to fill out this bug report!
 - type: textarea
   id: logs
   attributes:
