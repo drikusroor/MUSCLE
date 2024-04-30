@@ -1,5 +1,6 @@
 name: "🐛 Bug Report"
 title: "🐛 [BUG] - <title>"
+description: "Create a report to help us improve MUSCLE"
 assignees: []
 labels: [
   "bug"
