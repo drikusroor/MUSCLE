@@ -47,14 +47,6 @@ body:
     required: false
 - type: markdown
   id: screenshotmarkdown
-  attributes:
-    label: "Screenshots markdown"
-    description: If applicable, add screenshots to help explain your problem.
-    value: |
-      ![DESCRIPTION](LINK.png)
-    render: bash
-  validations:
-    required: false
 - type: textarea
   id: logs
   attributes:
