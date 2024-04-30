@@ -79,7 +79,7 @@ body:
       - Mac
   validations:
     required: false
-type: textarea
+- type: textarea
   id: context
   attributes:
     label: "Additional context"
