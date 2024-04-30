@@ -18,10 +18,10 @@ body:
       Please also post any screenshots of the bug you encountered
     value: |
       ## Description
-      
+      <!-- Short and explicit description of your incident... -->
 
       ## Screenshots
-
+      <!-- You can upload your screenshots (if any) here -->
       
   validations:
     required: true
