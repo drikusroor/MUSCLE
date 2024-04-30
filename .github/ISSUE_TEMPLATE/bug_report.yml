@@ -11,7 +11,11 @@ body:
   attributes:
     label: "Description"
     description: Please enter an explicit description of your issue
-    placeholder: Short and explicit description of your incident...
+    placeholder: | 
+      Short and explicit description of your incident...
+
+      ## Screenshots
+      <!-- Please post any screenshots of the bug you encountered -->
   validations:
     required: true
 - type: input
@@ -35,20 +39,6 @@ body:
     render: bash
   validations:
     required: true
-- type: textarea
-  id: screenshot
-  attributes:
-    label: "Screenshots"
-    description: If applicable, add screenshots to help explain your problem.
-    value: |
-      ![DESCRIPTION](LINK.png)
-    render: bash
-  validations:
-    required: false
-- type: markdown
-  attributes:
-    value: |
-      Thanks for taking the time to fill out this bug report!
 - type: textarea
   id: logs
   attributes:
